@@ -1,0 +1,22 @@
+Scene: Bedroom
+
+*Informal*
+Hello? is this thing on? it is? Shoot
+
+*Formal*
+Good morning, 2641
+You wont remember, but you signed a contract.
+Have a look on the table. Is that your signature?
+You wont remember, but it is I assure you
+You are the first succesful, *mumble* hopefully, test subject
+Proceed to the next room and ill explain your task
+Failure to complie will result in punishment.
+
+Scene: Level 1
+*Formal*
+You have one hint, you can pick up the green cube, the red cube is too heavy for you. Maybe that button is useful?
+
+*After solving the puzzle*
+Now jump down, I ensure you.... its very safe. *Quick Sinister chuckle*
+
+

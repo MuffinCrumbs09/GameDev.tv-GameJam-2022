@@ -24,7 +24,7 @@ public class Grab : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(GetMouseRay(), out hit, 5f))
                 {
-                    if (hit.transform.GetComponent<Rigidbody>() != null)
+                    if (hit.transform.GetComponent<Rigidbody>() != null && hit.transform.tag == "Green")
                     {
                         pickedBool = true;
                         picked = hit.transform.gameObject;
