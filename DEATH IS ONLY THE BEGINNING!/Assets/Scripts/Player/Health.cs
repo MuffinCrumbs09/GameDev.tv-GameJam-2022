@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -12,16 +13,15 @@ public class Health : MonoBehaviour
     void Start()
     {
         health = maxHealth;
+        GameObject.Find("LevelManager").GetComponent<LevelManager>().level++;
     }
 
     void Update()
     {
         if (health <= 0)
         {
-            gameObject.GetComponent<CharacterController>().enabled = false;
-            gameObject.transform.position = spawn.transform.position;
-            gameObject.GetComponent<CharacterController>().enabled = true;
-            health = maxHealth;
+            DontDestroyOnLoad(GameObject.Find("LevelManager"));
+            SceneManager.LoadScene(GameObject.Find("LevelManager").GetComponent<LevelManager>().level + 1);
         }
     }
 

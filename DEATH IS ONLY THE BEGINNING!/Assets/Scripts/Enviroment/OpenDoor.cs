@@ -5,18 +5,19 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     public Animator a;
-
-    bool open;
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            if (!open)
-            {
-                open = true;
-                a.SetBool("OpenDoor", open);
-            }
+            a.SetTrigger("Open");
+        }
+    }
 
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            a.SetTrigger("Close");
         }
     }
 }
