@@ -21,6 +21,10 @@ public class Button : MonoBehaviour
         if (ObjectToChange.GetComponent<Animator>() != null)
         {
             ObjectToChange.GetComponent<Animator>().SetTrigger("Open");
+
+            if(ObjectToChange.GetComponent<FinishDoor>() != null){
+                ObjectToChange.GetComponent<FinishDoor>().FinishLevel();
+            }
         }
     }
 
