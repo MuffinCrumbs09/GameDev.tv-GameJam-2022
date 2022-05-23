@@ -20,4 +20,12 @@ public class OpenDoor : MonoBehaviour
             a.SetTrigger("Close");
         }
     }
+
+    public void Open(){
+        a.SetTrigger("Open");
+    }
+
+    public void Close(){
+        a.SetTrigger("Close");
+    }
 }

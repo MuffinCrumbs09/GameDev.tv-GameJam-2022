@@ -5,4 +5,6 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public int level;
+
+    public bool level_1_complete;
 }
