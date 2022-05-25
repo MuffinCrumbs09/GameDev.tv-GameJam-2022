@@ -2,37 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Button : MonoBehaviour
+namespace enviroment
 {
-    public GameObject ObjectToChange;
-    void OnTriggerEnter(Collider other)
+    public class Button : MonoBehaviour
     {
-        Open();
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        Close();
-    }
-
-
-    void Open()
-    {
-        if (ObjectToChange.GetComponent<Animator>() != null)
+        public GameObject ObjectToChange;
+        void OnTriggerEnter(Collider other)
         {
-            ObjectToChange.GetComponent<Animator>().SetTrigger("Open");
+            Open();
+        }
 
-            if(ObjectToChange.GetComponent<FinishDoor>() != null){
-                ObjectToChange.GetComponent<FinishDoor>().FinishLevel();
+        void OnTriggerExit(Collider other)
+        {
+            Close();
+        }
+
+
+        void Open()
+        {
+            if (ObjectToChange.GetComponent<Animator>() != null)
+            {
+                ObjectToChange.GetComponent<Animator>().SetTrigger("Open");
+
+                if (ObjectToChange.GetComponent<FinishDoor>() != null)
+                {
+                    ObjectToChange.GetComponent<FinishDoor>().FinishLevel();
+                }
             }
         }
-    }
 
         void Close()
-    {
-        if (ObjectToChange.GetComponent<Animator>() != null)
         {
-            ObjectToChange.GetComponent<Animator>().SetTrigger("Close");
+            if (ObjectToChange.GetComponent<Animator>() != null)
+            {
+                ObjectToChange.GetComponent<Animator>().SetTrigger("Close");
+            }
         }
     }
 }
