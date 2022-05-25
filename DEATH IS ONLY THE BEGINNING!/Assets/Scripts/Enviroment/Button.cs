@@ -7,6 +7,9 @@ namespace enviroment
     public class Button : MonoBehaviour
     {
         public GameObject ObjectToChange;
+
+        public GameObject Paramater;
+
         void OnTriggerEnter(Collider other)
         {
             Open();
@@ -16,7 +19,6 @@ namespace enviroment
         {
             Close();
         }
-
 
         void Open()
         {
@@ -28,6 +30,11 @@ namespace enviroment
                 {
                     ObjectToChange.GetComponent<FinishDoor>().FinishLevel();
                 }
+
+                if (Paramater != null)
+                {
+                    Paramater.GetComponent<BoxCollider>().enabled = true;
+                }
             }
         }
 
@@ -36,6 +43,11 @@ namespace enviroment
             if (ObjectToChange.GetComponent<Animator>() != null)
             {
                 ObjectToChange.GetComponent<Animator>().SetTrigger("Close");
+            }
+
+            if (Paramater != null)
+            {
+                Paramater.GetComponent<BoxCollider>().enabled = false;
             }
         }
     }
