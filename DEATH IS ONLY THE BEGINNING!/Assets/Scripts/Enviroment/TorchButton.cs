@@ -7,6 +7,7 @@ public class TorchButton : MonoBehaviour
     public GameObject target;
 
     public void DoSomething(){
-        target.SetActive(true);
+        target.GetComponent<Animator>().SetTrigger("Open");
+        target.GetComponent<BoxCollider>().enabled = false;
     }
 }
