@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8861150224552970141, guid: dae799f3885cec34a819a880663e14c9, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player (Gun)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dae799f3885cec34a819a880663e14c9, type: 3}
@@ -135,3 +135,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0da999127e59324cbc0e05a765b6f39, type: 3}
+--- !u!1 &5473097427556902794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f0da999127e59324cbc0e05a765b6f39, type: 3}
+  m_PrefabInstance: {fileID: 5131061008335313627}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &10288770990851929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5473097427556902794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86822297ac0909479f9bbf250787abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

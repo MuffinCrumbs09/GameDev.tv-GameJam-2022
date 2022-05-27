@@ -7,6 +7,10 @@ TagManager:
   - Green
   - Red
   - TorchButton
+  - Safe
+  - Torch
+  - Note
+  - Gun
   layers:
   - Default
   - TransparentFX

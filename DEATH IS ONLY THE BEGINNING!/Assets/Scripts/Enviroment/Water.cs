@@ -8,7 +8,14 @@ public class Water : MonoBehaviour
 
     int maxTime = 4;
 
+    GameObject drownCam;
     float time; 
+
+    void Start()
+    {
+        drownCam = GameObject.Find("Drown");
+        drownCam.SetActive(false);
+    }
     void OnTriggerStay(Collider other)
     {
         if (other.transform.tag == "Player")
@@ -28,6 +35,10 @@ public class Water : MonoBehaviour
     {
         inWater = true;
         time = 0;
+
+        other.gameObject.SetActive(false);
+        drownCam.SetActive(true);
+        drownCam.GetComponent<Animator>().SetTrigger("Drown");
     }
 
     void OnTriggerExit(Collider other)

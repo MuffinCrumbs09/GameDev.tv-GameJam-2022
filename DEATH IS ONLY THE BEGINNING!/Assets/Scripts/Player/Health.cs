@@ -13,7 +13,6 @@ public class Health : MonoBehaviour
     void Start()
     {
         health = maxHealth;
-        GameObject.Find("LevelManager").GetComponent<LevelManager>().level++;
     }
 
     void Update()

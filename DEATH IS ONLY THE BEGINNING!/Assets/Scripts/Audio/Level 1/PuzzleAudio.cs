@@ -19,7 +19,7 @@ namespace LevelOne
         {
             if (other.transform.tag == "Player")
             {
-                if (am.choosen() && am.getClip() != 2)
+                if (am.choosen() && am.getClip() != 1)
                 {
                     am.nextClip();
                 }

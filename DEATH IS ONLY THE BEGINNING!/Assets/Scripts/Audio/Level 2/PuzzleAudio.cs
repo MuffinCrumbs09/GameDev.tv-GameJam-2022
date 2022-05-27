@@ -21,7 +21,7 @@ namespace LevelTwo
         {
             if (other.transform.tag == "Player")
             {
-                if (am.choosen() && am.getClip() != 1)
+                if (am.choosen() && am.getClip() < 1)
                 {
                     am.nextClip();
                 }
