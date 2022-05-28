@@ -21,7 +21,7 @@ public class ShootSelf : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetMouseButton(0))
         {
 
             StartCoroutine(ShootingSelf());
@@ -32,6 +32,6 @@ public class ShootSelf : MonoBehaviour
     {
         GetComponent<Animator>().Play("Shootself");
         yield return new WaitForSeconds(time);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(5);
     }
 }

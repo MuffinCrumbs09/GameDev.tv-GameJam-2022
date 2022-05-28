@@ -45,7 +45,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0.8
   m_Range: 60
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -218,15 +218,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8861150224552970129, guid: dae799f3885cec34a819a880663e14c9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.011742234
       objectReference: {fileID: 0}
     - target: {fileID: 8861150224552970129, guid: dae799f3885cec34a819a880663e14c9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 8861150224552970129, guid: dae799f3885cec34a819a880663e14c9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 55.45
       objectReference: {fileID: 0}
     - target: {fileID: 8861150224552970129, guid: dae799f3885cec34a819a880663e14c9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -262,7 +262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8861150224552970141, guid: dae799f3885cec34a819a880663e14c9, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player (Torch)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dae799f3885cec34a819a880663e14c9, type: 3}
