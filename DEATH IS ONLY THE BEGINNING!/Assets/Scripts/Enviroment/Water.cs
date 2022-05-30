@@ -35,14 +35,8 @@ public class Water : MonoBehaviour
     {
         inWater = true;
         time = 0;
-
-        other.gameObject.SetActive(false);
+        
         drownCam.SetActive(true);
         drownCam.GetComponent<Animator>().SetTrigger("Drown");
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        inWater = false;
     }
 }

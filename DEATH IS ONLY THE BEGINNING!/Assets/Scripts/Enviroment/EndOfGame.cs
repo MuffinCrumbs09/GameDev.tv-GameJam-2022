@@ -32,6 +32,8 @@ public class EndOfGame : MonoBehaviour
         yield return new WaitForSeconds(1);
         text.SetActive(true);
         yield return new WaitForSeconds(3);
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         SceneManager.LoadScene(0);
     }
 }
